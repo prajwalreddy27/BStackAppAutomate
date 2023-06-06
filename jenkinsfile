@@ -13,12 +13,13 @@ pipeline {
             steps {
                 browserstack(credentialsId: '9a6f78db-dc64-41b5-a950-754079335050') {
                      echo "hello from browserStack"
-                    //  sh 'npm install'
+                     sh 'npm install'
                     //  sh 'cd android' && 'node BrowserStackSample.js'
                     //  sh 'npm run sample-test'
 
-                    dir('scripts') {
+                    dir('android') {
                     /* execute commands in the scripts directory */
+                        echo "hello from android"
                         sh 'node BrowserStackSample.js'
                     }
                 }
