@@ -1,0 +1,29 @@
+pipeline {
+    agent any 
+
+    tools {nodejs "NodeJS"}
+    
+    stages {
+        stage('Build') { 
+            steps {
+                echo 'welcome to App Automate build'
+            }
+        }
+        stage('Test') { 
+            steps {
+                // browserstack(credentialsId: '9a6f78db-dc64-41b5-a950-754079335050') {
+                //      echo "hello from browserStack"
+                //      sh 'npm install'
+                //      sh 'npm run sample-test'
+                // }
+                // browserStackReportPublisher 'automate'
+                echo 'welcome to test'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'welcome to deploy'
+            }
+        }
+    }
+}
