@@ -23,7 +23,7 @@ pipeline {
                         sh 'node BrowserStackSample.js'
                     }
                 }
-                // browserStackReportPublisher 'automate'
+                browserStackReportPublisher 'automate'
                 echo 'welcome to test'
             }
         }
