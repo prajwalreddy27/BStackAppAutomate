@@ -5,7 +5,7 @@ var asserters = wd.asserters;
 desiredCaps = {
   'browserstack.user' : 'saiprajwalreddyn_E8gLIQ',
   'browserstack.key' : 'yr9QMYXyW13LoPTiQK5s',
-  'build' : 'snookala Pixel3',
+  'build' : 'snookala Pixel 23',
   'name': 'single_test',
   'device' : 'Google Pixel 3',
   'app' : 'bs://306eb7a609103f035c6ba181cad9b7ddb3428579',
